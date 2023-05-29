@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    
+}
+nav{
+    font-family:'Courgette', cursive;
+    background-color: black;
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo1{
+    width: 500px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: end;
+    
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0.7rem;
+    
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem;
+}
+nav ul a:hover{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 20px;
+
+}
+.titulo{
+    color: white;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 5rem;
+    text-transform: uppercase;
+    }
+    
+
+    
+.p1{
+    color: white;
+    padding: 10px;
+    border: 20px;
+    margin: 10px;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.footercontenido{
+    background-color: gray;
+    text-align: center;
+    padding: 1em 0;
+    width: 100px;
+    text-align: center;
+}
+.formulario{
+    border: 20px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+.contenedor{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax( 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+   }
+
+.item {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+    }
+
+.item img {
+    width: 40%;
+     height: auto;
+    border-radius: 5px;
+   padding: 30px;
+}
+
+    .texto{
+    padding: 40px;
+    width: 30%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.titulo2{
+    padding: 40px;
+    font-family: 'Courgette', cursive;
+    color: white;
+    text-align: center;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .footer-links li {
+    margin-right: 10px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+  }
+  footer li :hover{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 20px;
+
+  }
+
+   
+  
