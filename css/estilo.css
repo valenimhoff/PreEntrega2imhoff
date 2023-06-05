@@ -211,6 +211,70 @@ font-weight: 400;
     border-radius: 20px;
 
   }
+
+  .principal{
+    padding: 10px;
+    margin: 30px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+
+  .card1{
+    background-color: white;
+    border:solid blueviolet 2px;
+    margin: 10px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+  
+
+.card-text{
+  padding: 30px;
+
+}   
+
+.section{
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 50%;
+  margin: 15px auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px (black) ;
+}
+
+.section img{
+  width: 50%;
+  border-radius: 30px;
+  border: dashed 3px blueviolet;
+  justify-content: flex-end;
+}
+
+.section h1{
+  margin: 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  padding:5%;
+  margin-bottom: 10px;
+}
+
+.section p{
+  color: white;
+  margin-right: 20px;
+}
+
+  
+   
+  
+
 @media (max-width:600px) {
 
   .form{
