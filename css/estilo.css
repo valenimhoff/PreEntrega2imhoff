@@ -256,10 +256,12 @@ font-weight: 400;
   .footer-links {
     text-align: center;
   }
-   
+    
+  .contenedor {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
     }
 
-  
 
     
   
