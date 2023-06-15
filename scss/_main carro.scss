@@ -1,0 +1,74 @@
+main {
+    .galeria {
+      h1 {
+        text-align: center;
+        margin: 20px 0 15px 0;
+        font-weight: 300;
+      }
+  
+      .titulo {
+        color: white;
+        text-align: center;
+        font-family: 'Courgette', cursive;
+        font-size: 32px;
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+  
+      .lineas {
+        border-top: 5px solid $colorsecu;
+        margin-bottom: 40px;
+      }
+  
+      .contenedorimg {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-radius: 3px;
+  
+        .imagen {
+          width: 32%;
+          position: relative;
+          height: 250px;
+          margin-bottom: 5px;
+          box-shadow: 0px 0px 3px 0px $colorsecu;
+  
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+  
+          .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(128, 13, 228, 0.781);
+            width: 100%;
+            height: 0;
+            transition: 1s ease;
+            overflow: hidden;
+  
+            h2 {
+              color: white;
+              font-weight: 300;
+              font-size: 30px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              text-align: center;
+              transform: translate(-50%, -50%);
+            }
+          }
+  
+          &:hover .overlay {
+            height: 100%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  

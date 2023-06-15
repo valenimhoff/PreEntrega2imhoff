@@ -1,0 +1,60 @@
+
+@import"var";
+@import"body";
+@import"header";
+@import"main index";
+@import"main form";
+@import"main carro";
+@import"main menu";
+@import"footer";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+main{
+
+  .titulo{
+    color: white;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  font-size: 32px;
+  }
+  .principal{
+        padding: 10px;
+        margin: 30px;
+        background-color:$colorpri;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .card1{
+            background-color: white;
+            border:solid $colorsecu 2px;
+            margin: 10px;
+            display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+         
+          .card-text{
+            padding: 30px;
+          
+          }   
+        
+        }
+    
+
+
+        
+}
+}
