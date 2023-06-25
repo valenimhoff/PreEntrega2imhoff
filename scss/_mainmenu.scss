@@ -1,0 +1,54 @@
+main {
+  .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+  
+    .column-2.carta {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      row-gap: 1rem;
+    }
+  
+    .plato-carta {
+      display: flex;
+      align-items: center;
+      border: 1px solid blueviolet;
+      border-radius: 6px;
+      background-color: black;
+  
+      .img-plato-carta {
+        display: flex;
+        flex-basis: 25%;
+        justify-content: center;
+        background-color: black;
+  
+        img {
+          max-width: 200px;
+          max-height: 90px;
+        }
+      }
+  
+      .title-plato-carta {
+        border: 1px solid black;
+        border-bottom: none;
+        border-top: none;
+        flex-basis: 60%;
+        padding: 0 1rem;
+        color: white;
+
+      }
+  
+      .precio-plato-carta {
+        display: flex;
+        flex-basis: 15%;
+        justify-content: center;
+        font-weight: bold;
+        color: white;
+      }
+    }
+  }
+  
+}
+  
+  

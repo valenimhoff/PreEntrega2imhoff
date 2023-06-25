@@ -139,52 +139,41 @@ main .galeria .contenedorimg {
       height: 100%;
       cursor: pointer; }
 
-main menu {
-  padding: 0 10px 30px 10px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 20px; }
-  main menu .encabezado {
-    background-color: black;
-    color: white;
-    margin-bottom: 30px;
-    padding: 30px 0;
-    grid-column: 1/-1;
-    text-align: center; }
-    main menu .encabezado h1 {
-      font-family: 'Courgette', cursive;
-      font-weight: 400;
-      font-size: 32px;
-      letter-spacing: 10px;
-      margin-bottom: 10px;
-      text-transform: uppercase; }
-  main menu .menu-item {
+main .wrap {
+  max-width: 1200px;
+  margin: 0 auto; }
+  main .wrap .column-2.carta {
     display: grid;
-    grid-template-rows: auto 1fr;
-    border-radius: 15px;
-    box-shadow: 0 0 15px blueviolet;
-    transition: 0.2s ease-in-out;
-    background-color: white; }
-    main menu .menu-item img {
-      width: 100%;
-      height: auto;
-      border-radius: 15px 15px 0 0;
-      cursor: pointer; }
-    main menu .menu-item .detalles {
-      padding: 20px 10px;
-      display: grid;
-      grid-template-rows: auto 1fr 50px;
-      grid-row-gap: 15px; }
-      main menu .menu-item .detalles .detalles-sub {
-        font-weight: 600;
-        font-size: 18px; }
-        main menu .menu-item .detalles .detalles-sub .precio {
-          text-align: end; }
-          main menu .menu-item .detalles .detalles-sub .precio p {
-            font-size: 15px;
-            line-height: 28px;
-            font-weight: 400;
-            align-self: stretch; }
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem; }
+  main .wrap .plato-carta {
+    display: flex;
+    align-items: center;
+    border: 1px solid blueviolet;
+    border-radius: 6px;
+    background-color: black; }
+    main .wrap .plato-carta .img-plato-carta {
+      display: flex;
+      flex-basis: 25%;
+      justify-content: center;
+      background-color: black; }
+      main .wrap .plato-carta .img-plato-carta img {
+        max-width: 200px;
+        max-height: 90px; }
+    main .wrap .plato-carta .title-plato-carta {
+      border: 1px solid black;
+      border-bottom: none;
+      border-top: none;
+      flex-basis: 60%;
+      padding: 0 1rem;
+      color: white; }
+    main .wrap .plato-carta .precio-plato-carta {
+      display: flex;
+      flex-basis: 15%;
+      justify-content: center;
+      font-weight: bold;
+      color: white; }
 
 footer .aparecer {
   margin: 100px;
@@ -254,6 +243,95 @@ footer .pie-pagina {
     color: #fff; }
     footer .pie-pagina .grupo-2 .small {
       font-size: 15px; }
+
+@media (max-width: 700px) {
+  .form {
+    padding: 3.5em 1em; }
+  .item img {
+    margin-left: 0;
+    width: 100%; }
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1 1fr;
+    margin: 0 auto;
+    max-width: 700px;
+    margin-top: 150px;
+    padding: auto; }
+  .item .img {
+    width: 90%; }
+  .titulo2 {
+    font-size: 3rem; }
+  .texto {
+    font-size: 2rem; } }
+
+@media (max-width: 450px) {
+  .form {
+    padding: 3.5em 1em; }
+  .item img {
+    margin-left: 0;
+    width: 100%; }
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    text-align: center; }
+  .footer-links {
+    margin-top: 10px;
+    text-align: center; }
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1 1fr;
+    margin: 0 auto;
+    max-width: 700px;
+    margin-top: 150px;
+    padding: auto; }
+  .item .img {
+    width: 90%; }
+  .titulo2 {
+    font-size: 2rem; }
+  .texto {
+    font-size: 1rem; } }
+
+@media (max-width: 450px) and (max-width: 1024px) {
+  .column-4 {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media (max-width: 450px) and (max-width: 768px) {
+  .column-4 {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 450px) and (max-width: 480px) {
+  .column-4 {
+    grid-template-columns: repeat(1, 1fr); } }
+
+@media screen and (max-width: 450px) and (max-width: 1000px) {
+  .contenedorimg {
+    width: 95%; } }
+
+@media screen and (max-width: 450px) and (max-width: 700px) {
+  .contenedorimg {
+    width: 90%; }
+  .contenedorimg .imagen {
+    width: 48%; } }
+
+@media screen and (max-width: 450px) and (max-width: 450px) {
+  .galeria h1 {
+    font-size: 22px; }
+  .contenedorimg {
+    width: 98%; }
+  .contenedorimg .imagen {
+    width: 80%; } }
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; } }
+
+@media (max-width: 680px) {
+  .column-2.carta {
+    grid-template-columns: repeat(1, 1fr); } }
 
 * {
   margin: 0;
